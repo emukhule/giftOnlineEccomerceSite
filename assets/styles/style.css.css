@@ -1,0 +1,879 @@
+/* @charset "utf-8";*/
+/* Global Styles */
+/*
+a:hover {
+	color: rgba(255,255,255,1.00);
+}
+*/
+*{
+box-sizing: border-box;
+	margin: 0;
+ 
+}
+body{
+	font-family: 'Poppins', sans-serif;
+/*	height: 100vh;*/
+/*	width: 100%;*/
+/*	display: grid;*/
+	
+}
+/*header*/
+header {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	background-color: #ffdbe0;
+/*	position: sticky;*/
+}
+
+
+/*FIXED TOP NAV BAR*/
+div .sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content{
+	padding-top: 60px;
+}
+/* END FIXED TOP NAV BAR*/
+
+
+/* Logo placeholder*/
+.logo img{
+	width: 90px;
+	float: left;
+	padding-left:5%;
+	padding-top:0%;
+	padding-left: 0%;
+	filter:opacity(1);
+	height: auto;
+  }
+
+/* div for Links in header */
+#headerLinks {
+	float: auto;
+	width: calc( 100% - 139px );
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ffdbe0;
+	font-size: 30px;
+	font-weight: 700;;
+	
+}
+/* Links in header */
+#headerLinks a {
+	text-decoration: none;
+	color: #2B34D0;
+	padding-left: 66px;
+	font-size: 12px;
+	
+}
+#headerLinks a:hover{
+	color: blueviolet;
+	transform-style: preserve-3d;
+}
+/* Offer text banner*/
+#offer {
+	font-family:bitter;
+	clear: both;
+	 background-color: transparent; 
+	color:#ffffff;
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+	
+}
+#offer p, h2{
+	color: black;
+	flex: left;
+	font-size: 45px
+		
+}
+.banner{
+	background-image: 
+		url("../../imgs/coffee-beans-5928035_1280.jpg");
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	
+}
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	float: left;
+	width: 20%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color:#ffdbe0;
+	padding-top: 36px;
+	height: 784px;
+/*	position: sticky;*/
+}
+/* main content of the site */
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+	position: sticky;
+}
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+	text-align: left;
+	color: rgba(146,146,146,1.00);
+	position: relative;
+	left: 0%;
+/*	position: sticky;*/
+}
+/* Search field in sidebar */
+#content .sidebar #search {
+	width: 100%;
+	border-radius:5px;
+	height: 25px;
+	text-align: center;
+	color: rgba(208,207,207,1.00);
+	font-size: 14px;
+/*	position: relative;*/
+	margin-bottom: 21px;
+}
+/* Whole page content */
+#mainWrapper {
+	width: 100%;
+	padding-left: 0;
+}
+/*menu elements */
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: right;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 25%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 20px;
+	position:relative;
+	top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color:#211B1B;
+	white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: #ffdbe0;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color:#ffdbe0;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+	
+	
+	bottom: 0;
+	left: 0;
+	
+}
+/*Each footer content */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(255,255,255,1.00);
+	text-align: justify;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 100%;
+}
+/*Links in sidebar */
+.sidebar #menubar .menu ul li a {
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+.sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+}
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+	font-size: 14px;
+}
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+	font-size: 14px;
+}
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+	margin-bottom: 29px;
+}
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menu headings in sidebar */
+#menubar .menu h2 {
+	display: inline;
+	font-size: medium;
+	padding-right: 6%;
+}
+/* Unordered List of links */
+#menubar .menu ul {
+	display: inline;
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+}
+/* Content holders in catalog view */
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+/* Buy buttons in catalog view */
+.productRow .productInfo .buyButton {
+	font-size: 15px;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: visible;
+	
+}
+/* Links in header */
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+/*Container for links in header */
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: #ffdbe0;
+	padding-bottom: 21px;
+}
+/* Logo placeholder*/
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+/* Links in header */
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+	color: #000;
+}
+/*Offer - Text Banner */
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+/* Menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+	section .mainContent .category{
+		padding-bottom:25px;
+	}
+/*Menu headings in sidebar */
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+#mainWrapper footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	padding-left: 8%;
+}
+/* Main content which excludes the sidebar */
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
+.section-heading{
+	text-align: center;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-color:#ffffff;
+	line-height: 50px;
+	color: crimson;
+}
+/*section 2----*/
+.category{
+	display: flex;
+	flex-wrap: wrap;
+}
+.category-card{
+	padding: 2%;
+	box-shadow: 1px 1px 25px rgba(0,0,0,0.2);
+	flex-grow: 1;
+	flex-basis:220px;
+	display: flex  /*So that the child elements can use flexbox stuff tool aswell*/
+}
+.category-img img{
+	max-width: 100%;
+}
+
+/*RESPONSIVE FLEXBOXING.*/
+@media(max-width:920px){
+	.category-card{
+		flex: 1 25%;
+	}
+}
+/*End of Section 2 -----*/
+figcaption a{
+	text-decoration: none;
+}
+figcaption a:hover{
+	color: #BF7173;
+}
+.heading{
+	color: crimson;
+	font-weight: 600;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+	float: left;	
+}
+/*PRODUCT SLIDER*/
+.product-slider-1,.product-slider-2{
+	background-color:transparent;
+	position: relative;
+	box-sizing: border-box;
+	margin:inherit;
+}
+.box{
+	width: 300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	height: 100%;
+	
+	
+}
+.slide-img{
+	height:450px;
+	position: relative;
+	
+}
+.slide-img img{
+	width:100%;
+	height:100%;
+	object-fit:fil;
+	box-sizing: border-box;
+	display: inherit;
+}
+.detail-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+		
+	
+}
+.type{
+	display: flex;
+	flex-direction: column;
+	
+}
+.type a {
+	color: #222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+	text-decoration: none;
+}
+.type span{
+	color: rgba(26,26,26,0.5);
+}
+.price{
+	color: #333333;
+	font-weight: 600;
+	font-size:1.1rem;
+	font-family: poppins;
+	letter-spacing: 0.5px;
+}
+a:hover{
+	color: rgba(92,95,236,0.6);
+}
+a{
+	text-decoration: none;
+}
+.overlay{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(92,95,236,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.buy-btn{
+	width: 160px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	background-color: #FFFFFF;
+	color: #252525;
+	align-items: center;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: calibri;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	
+	
+}
+
+.buy-btn:hover{
+	color: #ffffff;
+	background-color: #EFAEAF;
+	transition: all ease 0.3s;
+	}
+.overlay{
+	visibility: hidden;
+}
+.slide-img:hover .overlay{
+	visibility: visible;
+	animation: fade 0.5s;
+}
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+	
+}
+/*Contact page/Fin Us*/
+#contacts_us{
+	position: relative;
+	box-sizing: border-box;
+/*	background: #ffff;*/
+	
+	display: inherit;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	
+
+}
+.contact-in{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+	margin-top: 150px;
+	
+	
+}
+.contact-map{
+	width: 100%;
+	height: auto;
+	flex: 50%;	
+	align-items: center;
+}
+.contact-map iframe{
+	width: 100%;
+	height: 100%;
+	
+}
+.contact-form{
+	width: 100%;
+	height: auto;
+	flex: 30%;
+	padding: 30px;
+	margin-right: 25px;
+	text-align: center;
+}
+.contact-form h1{
+	margin-bottom: 10px;	
+}
+.contact-form-text{
+	width: 100%;
+	height: 10px;
+color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 20px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	display: flex;
+}
+.contact-form-text::placeholder{
+	color: #aaa;
+}
+.contact-form-textarea{
+	width: 100%;
+	height: 140px;
+    color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 10px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: 'Poppins', sans-serif;
+	
+}
+.contact-form-textarea::placeholder{
+	color: #aaa;
+}
+.contact-form-btn{
+	
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 50px;
+	background: #ffdbe0;
+	color:#332020;
+	text-transform: uppercase;
+	font-weight: 200;
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 18px;
+	
+	
+}
+/*End of Contact page/Fin Us*/
+
+/*product slider heading*/
+.slider-heading{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-family: 'Dancing Script', cursive;
+	font-size: 20px;						
+}
+.h1-styling{
+	font-family: 'Dancing Script', cursive;
+	color: crimson;
+	
+}
+/* End of product slider heading*/
+
+/*ORDER PAGE*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+/*END OF ORDER PAGE*/
+
+/*FOOTER SOCIAL MEDIA ICONS*/
+
+.fa {
+  padding: 13px;
+  font-size: 30px;
+  width: 35px;
+  text-align:center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 70%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/*END OF FOOTER SOCIAL MEDIA ICONS*/
